@@ -1,0 +1,68 @@
+using System;
+
+internal class Program2
+{
+   // static void casas()
+   // {
+    //    Random casa = new Random();
+//
+    //    int casinha = casa.Next(1, 75);
+    //
+    //    Console.WriteLine(casinha);
+
+  //  }
+   private static void Main(string[] args)
+   {
+        Random casa = new Random();
+        int casinha = casa.Next(1, 75);
+        //Console.WriteLine(casinha)
+
+            int[] linha1 = { casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75) };
+            int[] linha2 = { casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75) };
+            int[] linha3 = { casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75) };
+            int[] linha4 = { casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75) };
+            int[] linha5 = { casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75) };
+            int[] linha6 = { casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75) };
+    
+            foreach (int um in linha1)
+            {
+                Console.Write(" " + um + " ");
+            }
+            Console.WriteLine("");
+
+            foreach (int dois in linha2)
+            {
+                Console.Write(" " + dois + " ");
+            }
+            Console.WriteLine("");
+
+            foreach (int tres in linha3)
+            {
+                Console.Write(" " + tres + " ");
+            }
+            Console.WriteLine("");
+
+            foreach (int quatro in linha4)
+            {
+                Console.Write(" " + quatro + " ");
+            }
+
+            Console.WriteLine("");
+
+            foreach (int cinco in linha5)
+            {
+                Console.Write(" " + cinco + " ");
+            }
+
+            Console.WriteLine("");
+
+            foreach (int seis in linha6)
+            {
+                Console.Write(" " + seis + " ");
+            }
+        Console.WriteLine("");
+        Random sorte = new Random();
+        int sortudo = sorte.Next(1, 75);
+        Console.WriteLine("O numero sortedo foi: " + sortudo);
+    }
+}
