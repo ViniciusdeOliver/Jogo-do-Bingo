@@ -1,68 +1,27 @@
-using System;
-
-internal class Program2
+internal class Program
 {
-   // static void casas()
-   // {
-    //    Random casa = new Random();
-//
-    //    int casinha = casa.Next(1, 75);
-    //
-    //    Console.WriteLine(casinha);
+ 
+   
+        public static void Main(string[] args)
+        {
+        Console.WriteLine("Cartela:");
+        Random numdacasa = new Random();
+        int lol = numdacasa.Next(1, 76);
 
-  //  }
-   private static void Main(string[] args)
-   {
-        Random casa = new Random();
-        int casinha = casa.Next(1, 75);
-        //Console.WriteLine(casinha)
-
-            int[] linha1 = { casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75) };
-            int[] linha2 = { casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75) };
-            int[] linha3 = { casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75) };
-            int[] linha4 = { casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75) };
-            int[] linha5 = { casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75) };
-            int[] linha6 = { casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75), casa.Next(1, 75) };
-    
-            foreach (int um in linha1)
+            for (int l = 1; l <= 8; ++l)
             {
-                Console.Write(" " + um + " ");
-            }
-            Console.WriteLine("");
-
-            foreach (int dois in linha2)
-            {
-                Console.Write(" " + dois + " ");
-            }
-            Console.WriteLine("");
-
-            foreach (int tres in linha3)
-            {
-                Console.Write(" " + tres + " ");
-            }
-            Console.WriteLine("");
-
-            foreach (int quatro in linha4)
-            {
-                Console.Write(" " + quatro + " ");
+                for (int c = 1; c <= 6; c++)
+                {
+                    Console.Write($" [{numdacasa.Next(1, 76)}] "); 
+                }
+                Console.WriteLine("");
             }
 
-            Console.WriteLine("");
 
-            foreach (int cinco in linha5)
-            {
-                Console.Write(" " + cinco + " ");
-            }
+        Console.WriteLine("O numero sorteado foi:" + lol);
 
-            Console.WriteLine("");
 
-            foreach (int seis in linha6)
-            {
-                Console.Write(" " + seis + " ");
-            }
-        Console.WriteLine("");
-        Random sorte = new Random();
-        int sortudo = sorte.Next(1, 75);
-        Console.WriteLine("O numero sortedo foi: " + sortudo);
+
     }
+
 }
